@@ -7,7 +7,8 @@ import { CreateClimberComponent } from './create-climber/create-climber.componen
 import { UpdateClimberComponent } from './update-climber/update-climber.component';
 import { ClimberDetailsComponent } from './climber-details/climber-details.component';
 import { ClimberListComponent } from './climber-list/climber-list.component';
-
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,9 @@ import { ClimberListComponent } from './climber-list/climber-list.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
