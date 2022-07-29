@@ -1,1 +1,76 @@
-<p>update-climber works!</p>
+<div class="row">
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+        <div class="row">
+            <h3 class="text-center">Create Climber</h3>
+            <div class="card-body">
+                <form (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label>Firstname</label>
+                        <input type="text" class="form-control" id="fname" 
+                        [(ngModel)]="climber.fname" name="fname">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Lastname</label>
+                        <input type="text" class="form-control" id="lname" 
+                        [(ngModel)]="climber.lname" name="lname">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Harness</label>
+                        <input type="text" class="form-control" id="harness" 
+                        [(ngModel)]="climber.harness" name="harness">
+                    </div>
+
+                    <div class="form-group">
+                        <label>rope</label>
+                        <input type="text" class="form-control" id="rope" 
+                        [(ngModel)]="climber.rope" name="rope">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Belay Device</label>
+                        <input type="text" class="form-control" id="belayDevice" 
+                        [(ngModel)]="climber.belayDevice" name="belayDevice">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Climbing Shoes</label>
+                        <input type="text" class="form-control" id="climbingShoes" 
+                        [(ngModel)]="climber.climbingShoes" name="climbingShoes">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Helmet</label>
+                        <input type="text" class="form-control" id="helmet" 
+                        [(ngModel)]="climber.helmet" name="helmet">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Chalk Bag</label>
+                        <input type="text" class="form-control" id="chalkBag" 
+                        [(ngModel)]="climber.chalkBag" name="chalkBag">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Quickdraw</label>
+                        <input type="text" class="form-control" id="quickdraw" 
+                        [(ngModel)]="climber.quickdraw" name="quickdraw">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Retail Price</label>
+                        <input type="text" class="form-control" id="retailPrice" 
+                        [(ngModel)]="climber.retailPrice" name="retailPrice">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Quantity</label>
+                        <input type="text" class="form-control" id="quantity" 
+                        [(ngModel)]="climber.quantity" name="quantity">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
