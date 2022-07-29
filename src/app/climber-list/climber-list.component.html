@@ -1,1 +1,37 @@
-<p>climber-list works!</p>
+<div class="row">
+    <h2>Climber List</h2>
+</div>
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Harness</th>
+            <th>Rope</th>
+            <th>Belay Device</th>
+            <th>Climbing Shoes</th>
+            <th>Helmet</th>
+            <th>Chalkbag</th>
+            <th>Quickdraws</th>
+            <th>Retail Price</th>
+            <th>Quantity</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let climber of climbers">
+            <td> {{ climber.fName }} </td>
+            <td> {{ climber.lName }} </td>
+            <td> {{ climber.harness }} </td>
+            <td> {{ climber.rope }} </td>
+            <td> {{ climber.belayDevice }} </td>
+            <td> {{ climber.climbingShoes }} </td>
+            <td> {{ climber.helmet }} </td>
+            <td> {{ climber.chalkBag }}</td>
+            <td> {{ climber.quickdraws }} </td>
+            <td> {{ climber.retailPrice }}</td>
+            <td> {{ climber.quantity }} </td>
+        </tr>
+    </tbody>
+</table>

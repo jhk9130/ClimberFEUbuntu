@@ -12,7 +12,7 @@ export class ClimberService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getClimberList(): Observable<Climber[]>{
+  getClimbersList(): Observable<Climber[]>{
     return this.httpClient.get<Climber[]>(`${this.baseURL}`);
   }
 
